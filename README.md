@@ -1,12 +1,12 @@
 # haskell-stack-travis-ci
 Dead simple setup tools for running a Haskell build matrix using stack for several versions.
 
-Scripts are adapted from those used for [haskell stack's build process](https://github.com/commercialhaskell/stack): 
+Scripts are adapted from those used for [haskell stack's build process](https://github.com/commercialhaskell/stack); as well as stealing a bit of [@tfausak's](https://github.com/tfausak) workflow.
 
 To test builds for a Haskell project using [stack](https://github.com/commercialhaskell/stack): 
 
 - `cp haskell-stack-travis-ci/.travis* my-project/`
-- Optionally add/remove GHC version targets inside `.travis.yml`.
+- Optionally add/remove GHC version build matrix targets inside `.travis.yml`.
 - For Libraries without binaries remove `BUILD_BINARY=1` from `.travis.yml` in the build matrix.
 - ...?
 - Profit
